@@ -1,0 +1,28 @@
+﻿@page
+@model PidProcessor.Web.Pages.PidValidationConfirmationModel
+
+@{ ViewData["Title"] = "PID Vlidation Confirmation"; }
+
+<h1 class="display-4 text-success">Your PID is valid</h1>
+<p class="lead text-muted">according to the Bulgarian unique citizenship number <a href="https://en.wikipedia.org/wiki/Unique_citizenship_number">algorithm</a></p>
+
+<p>
+    PID Information:
+</p>
+<p>
+    Date of birth : @Model.BirthDate
+</p>
+<p>
+    Region: @Model.Region
+</p>
+<p>
+    Birth order: @Model.BirthOrder (@(Model.BirthOrder-1) people were born before)
+</p>
+
+<p>
+    Gender: @Model.Gender
+</p>
+
+<div>
+    <a class="btn-primary btn" style="margin-top: 25px" asp-area="" asp-page="/validatePid">Validate another PID</a>
+</div>

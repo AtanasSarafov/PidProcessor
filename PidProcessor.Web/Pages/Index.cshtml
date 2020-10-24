@@ -5,6 +5,30 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to <b>PID Processor</b></h1>
+    <p class="text-muted">Here you can access the <a href="https://atanassarafov.visualstudio.com/PidProcessor">the project source code</a>.</p>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Notes
+    </div>
+    <div class="card-body">
+        <p>
+            A small project for PID (personal identification number) processing.
+        </p>
+        <p>
+            Currently supports two operations:
+            <ul>
+                <li>Validation</li>
+                <li>Generation (coming soon)</li>
+            </ul>
+        </p>
+        <p>
+            The current version works only with the Bulgarian Unique citizenship number, called EGN.
+        </p>
+        <hr />
+        <a href="/validatePid" class="btn btn-primary">Validate PID (EGN)</a>
+        <a href="/validatePid" class="btn btn-primary disabled">Generate PID (EGN)</a>
+    </div>
 </div>

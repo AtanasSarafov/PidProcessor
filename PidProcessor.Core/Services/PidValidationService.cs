@@ -66,7 +66,7 @@ namespace PidProcessor.Core.Services
 
         private bool ValidateRange(string pid, long pidNumber)
         {
-            return pid.Length == 10 && pidNumber >= 0010000000 && pidNumber <= 9999999999;
+            return pid.Length == 10 && pidNumber >= 0001000000 && pidNumber <= 9999999999;
         }
 
         private PidValidationStatus ValidateDate(Pid pid)

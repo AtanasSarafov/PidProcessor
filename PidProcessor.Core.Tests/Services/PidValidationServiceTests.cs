@@ -17,7 +17,6 @@ namespace PidProcessor.Core.Tests
         private Mock<IPidDataExtractionService> _pidDataExtractionService;
         private Pid _pidObject;
         private string _pid;
-        private List<Pid> _pids;
 
         [TestInitialize]
         public void Initialize()
@@ -122,7 +121,7 @@ namespace PidProcessor.Core.Tests
             _pidDataExtractionService.Setup(x => x.Segregate(It.IsAny<string>()))
                                      .Returns(_pidObject);
 
-            var actual = _pidValidationService.Validate(RandomPid());
+            var actual = _pidValidationService.Validate("9207113467");
 
             Assert.IsNotNull(actual);
             Assert.IsNotNull(actual.Pid);
@@ -155,7 +154,7 @@ namespace PidProcessor.Core.Tests
             Assert.AreEqual(PidValidationStatus.Valid, actual.ValidationStatus);
         }
 
-
+        // TODO: Move this to a more general place.
         private string RandomPid()
         {
             Random random = new Random();

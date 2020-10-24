@@ -1,0 +1,17 @@
+﻿@page
+@model PidProcessor.Web.Pages.ValidatePidModel
+
+@{ ViewData["Title"] = "Validate PID"; }
+
+<h1 class="display-4">Validate PID</h1>
+<p class="lead text-muted">according to the Bulgarian unique citizenship number <a href="https://en.wikipedia.org/wiki/Unique_citizenship_number">algorithm</a></p>
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="Pid" class="control-label"></label>
+        <input asp-for="Pid" class="form-control">
+        <span asp-validation-for="Pid" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Validate PID</button>
+</form>
