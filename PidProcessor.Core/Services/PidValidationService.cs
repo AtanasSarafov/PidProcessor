@@ -15,13 +15,11 @@ namespace PidProcessor.Core.Services
             _pidDataExtractor = pidDataExtractor;
         }
 
-        // TODO: Make it async.
         public PidValidationResult Validate(long pid)
         {
             return Validate(pid.ToString());
         }
 
-        // TODO: Make it async.
         public PidValidationResult Validate(string pid)
         {
             if (string.IsNullOrEmpty(pid))
