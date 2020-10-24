@@ -5,8 +5,6 @@ using PidProcessor.Core.Domain;
 using PidProcessor.Core.Interfaces;
 using PidProcessor.Core.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace PidProcessor.Core.Tests
 {
@@ -127,7 +125,6 @@ namespace PidProcessor.Core.Tests
             Assert.IsNotNull(actual.Pid);
             Assert.AreEqual(PidValidationStatus.InvalidChecksumSegment, actual.ValidationStatus);
         }
-
 
         [TestMethod]
         public void ShouldReturnValidResult()

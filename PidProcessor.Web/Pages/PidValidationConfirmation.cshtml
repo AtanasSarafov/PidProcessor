@@ -6,21 +6,21 @@
 <h1 class="display-4 text-success">Your PID is valid</h1>
 <p class="lead text-muted">according to the Bulgarian unique citizenship number <a href="https://en.wikipedia.org/wiki/Unique_citizenship_number">algorithm</a></p>
 
-<p>
+<p class="font-weight-bold">
     PID Information:
 </p>
 <p>
-    Date of birth : @Model.BirthDate
+    Date of birth : <b class="text-muted">@Model.BirthDate.ToShortDateString()</b>
 </p>
 <p>
-    Region: @Model.Region
+    Region: <b class="text-muted">@Model.Region</b>
 </p>
 <p>
-    Birth order: @Model.BirthOrder (@(Model.BirthOrder-1) people were born before)
+    Birth order: <b class="text-muted">@Model.BirthOrder (@(Model.BirthOrder-1) people were born before)</b>
 </p>
 
 <p>
-    Gender: @Model.Gender
+    Gender: <b class="text-muted">@Model.Gender</b>
 </p>
 
 <div>

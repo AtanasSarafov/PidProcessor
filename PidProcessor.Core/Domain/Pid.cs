@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PidProcessor.Core.Domain
+﻿namespace PidProcessor.Core.Domain
 {
     public class Pid
     {
