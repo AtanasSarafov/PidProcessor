@@ -4,9 +4,6 @@
     {
         Valid,
         InvalidDate,
-        InvalidRegionSegment,
-        InvalidOrderSegment,
-        InvalidGenderSegment,
         InvalidChecksumSegment
     }
 }

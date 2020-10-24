@@ -4,7 +4,11 @@ namespace PidProcessor.Core.Domain
 {
     public class Pid
     {
-        public DateTime DateSegment { get; set; }
+        public int YearSegment { get; set; }
+
+        public int MontSegment { get; set; }
+
+        public int DaySegment { get; set; }
 
         public int RegionSegment { get; set; }
 

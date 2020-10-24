@@ -4,8 +4,6 @@
     {
         public Pid Pid { get; set; }
 
-        public string Message { get; set; }
-
-        public PidValidationStatus Status { get; set; }
+        public PidValidationStatus ValidationStatus { get; set; }
     }
 }
